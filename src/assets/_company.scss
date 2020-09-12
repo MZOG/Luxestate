@@ -1,0 +1,62 @@
+.our-company {
+    margin-top: 100px !important;
+    display: flex;
+    justify-content: space-between;
+
+    &_left {
+        width: calc(45% - 15px);
+
+        h2 {
+            font-size: 40px;
+
+            span {
+                display: block;
+            }
+        }
+
+        p {
+            margin-top: 40px;
+        }
+    }
+
+    &_right {
+        width: calc(50% - 15px);
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 100%;
+
+            &-item {
+                background: $grey;
+                width: calc(50% - 15px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 15px;
+
+                &:nth-child(3), &:nth-child(4) {
+                    margin-bottom: 0;
+                }
+
+                .number {
+                    color: $yellow;
+                    text-align: center;
+                    font-size: 40px;
+                    font-weight: 600;
+                }
+
+                p {
+                    text-align: center;
+                    font-weight: 600;
+                    margin-top: 5px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+
+}

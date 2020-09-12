@@ -1,0 +1,106 @@
+.rent {
+    margin-top: 100px !important;
+    padding-top: 80px;
+    background: $grey;
+    padding-bottom: 50px;
+
+    h2 {
+        font-size: 40px;
+
+        span {
+            display: block;
+        }
+    }
+
+    &-container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .item {
+            width: calc(33.3% - 15px);
+            background: #fff;
+            box-shadow: 0 2.8px 2.2px rgba(0,0,0,.01),0 6.7px 5.3px rgba(0,0,0,.02),0 12.5px 10px rgba(0,0,0,.03),0 22.3px 17.9px rgba(0,0,0,.02),0 41.8px 33.4px rgba(0,0,0,.01),0 100px 80px rgba(0,0,0,.06);
+
+            &:nth-child(4), &:nth-child(5),&:nth-child(6) {
+                margin-top: 25px;
+            }
+
+            .image {
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .title {
+                p {
+                    font-size: 15px;
+                    font-weight: 600;
+                    margin: 20px 20px 0 20px;
+                }
+            }
+
+            .info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px;
+
+                .price {
+                    p {
+                        font-size: 18px;
+                        color: $yellow;
+                        font-weight: 600;
+                    }
+                }
+
+                .details {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    &-search {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+
+        input {
+            min-height: 60px;
+            width: 300px;
+            border: 0;
+            font-size: 16px;
+            text-indent: 20px;
+            background: #fafafa;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            background: $yellow;
+            min-height: 60px;
+            border: 0;
+            padding: 0 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background: darken($yellow, 5%);
+            }
+        }
+
+        p {
+            margin-left: 100px;
+            font-weight: 600;
+        }
+    }
+}

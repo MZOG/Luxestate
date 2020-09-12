@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+// variables
+$dark: #1f373d;
+$yellow: #ffcc01;
+$blue: #96bece;
+$grey: #f6f5f4;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  color: $dark;
+}
+
+// hamburger menu
+$hamburger-layer-width: 28px !default;
+$hamburger-layer-height: 3px !default;
+$hamburger-layer-border-radius: 3px !default;
+$hamburger-padding-x: 10px;
+$hamburger-padding-y: 10px;
+$hamburger-active-layer-color: $dark;
+$hamburger-layer-color: $dark !default;
+$hamburger-active-hover-opacity: 1;
+$hamburger-types: (collapse);
+
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";

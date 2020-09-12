@@ -1,0 +1,38 @@
+@import 'global/mixins';
+@import 'global/settings';
+
+@import 'header';
+@import 'hero';
+@import 'company';
+@import 'rent';
+@import 'howitworks';
+@import 'services';
+@import 'agents';
+@import 'ads';
+@import 'footer';
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+
+    @include mq('tablet', 'min') {
+      width: 768px;
+      margin: 0 auto;
+    }
+
+    @include mq('desktop', 'min') {
+      width: 1170px;
+    }
+
+    &.flex {
+        display: flex;
+    }
+
+    &.justify-between {
+        justify-content: space-between;
+    }
+
+    &.align-center {
+        align-items: center;
+    }
+  }

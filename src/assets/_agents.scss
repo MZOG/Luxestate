@@ -1,0 +1,59 @@
+.agents {
+    margin-top: 80px;
+    background: $grey;
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+    h2 {
+        font-size: 40px;
+        color: $dark;
+        margin-bottom: 30px;
+    }
+
+    .lead {
+        width: 42%;
+        line-height: 1.5;
+    }
+
+    &-container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .agent {
+            width: calc(33.3% - 15px);
+            background: #fff;
+            box-shadow: 0 2.8px 2.2px rgba(0,0,0,.01),0 6.7px 5.3px rgba(0,0,0,.02),0 12.5px 10px rgba(0,0,0,.03),0 22.3px 17.9px rgba(0,0,0,.02),0 41.8px 33.4px rgba(0,0,0,.01),0 100px 80px rgba(0,0,0,.06);
+
+            img {
+                width: 100%;
+                display: block;
+            }
+
+            p {
+                padding: 20px;
+                font-weight: 600;
+                font-size: 15px;
+            }
+
+           &-info {
+               padding: 0 20px 20px 20px;
+               display: flex;
+               justify-content: space-between;
+
+               h3 {
+                   font-size: 15px;
+                   color: $yellow;
+               }
+
+               a {
+                   svg {
+                       width: 20px;
+                       stroke: $dark;
+                       margin-left: 20px;
+                   }
+               }
+           }
+        }
+    }
+}

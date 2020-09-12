@@ -1,0 +1,54 @@
+.services {
+    margin-top: 100px !important;
+    padding-bottom: 50px;
+
+    h2 {
+        font-size: 40px;
+        color: $dark;
+        margin-bottom: 30px;
+    }
+
+    .lead {
+        width: 42%;
+        line-height: 1.5;
+    }
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        height: 100%;
+
+        .image {
+            width: calc(50% - 15px);
+            margin-left: -50px;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .services-items {
+            align-self: stretch;
+            width: calc(50% - 15px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .item {
+                align-self: center;
+
+                h3 {
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}

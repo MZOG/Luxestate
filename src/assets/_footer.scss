@@ -1,0 +1,104 @@
+footer {
+    background: $dark;
+    padding: 50px 0;
+    color: $grey;
+
+    .newsletter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 40px;
+        border-bottom: 2px solid rgba(lighten($dark, 60%), 0.4);
+        margin-bottom: 50px;
+
+        h2 {
+            width: calc(50% - 20px);
+            font-size: 40px;
+
+            span {
+                display: block;
+            }
+        }
+
+        .form {
+            width: calc(50% - 20px);
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+
+            input {
+                min-height: 60px;
+                border: none;
+                background: $grey;
+                width: 60%;
+                margin: 0;
+                display: inline-block;
+                text-indent: 20px;
+                font-size: 16px;
+            }
+
+            button {
+                background: $grey;
+                display: inline-block;
+                margin: 0;
+                border: none;
+                min-height: 60px;
+                padding: 0 30px;
+                cursor: pointer;
+                background: $yellow;
+
+                svg {
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+
+
+        &-box {
+            &:first-child {
+                width: calc(30% - 20px);
+            }
+
+            width: calc(17.5% - 20px);
+
+            .siteTitle {
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 50px;
+            }
+
+            .copy {
+                font-size: 14px;
+
+                span {
+                    display: block;
+                }
+            }
+
+            .title {
+                font-size: 13px;
+                color: rgba(lighten($dark, 60%), 0.4);
+                margin-bottom: 30px;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin-bottom: 15px;
+                   a {
+                        color: $grey;
+                        text-decoration: none;
+                   }
+                }
+            }
+        }
+    }
+}

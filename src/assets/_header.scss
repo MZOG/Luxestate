@@ -1,0 +1,126 @@
+header {
+  padding: 10px 0;
+  position: relative;
+
+  @include mq('tablet', 'min') {
+    padding: 15px 0;
+  }
+
+  @include mq('desktop', 'min') {
+    padding: 20px 0;
+  }
+
+  .logo {
+    a {
+      font-size: 20px;
+      font-weight: 600;
+      color: $dark;
+      text-decoration: none;
+
+      @include mq('tablet', 'min') {
+        font-size: 22px;
+      }
+
+      @include mq('desktop', 'min') {
+        font-size: 25px;
+      }
+    }
+  }
+
+  nav {
+    .main {
+      list-style: none;
+      position: absolute;
+      right: -100%;
+      width: 100%;
+      padding: 0 20px;
+      top: 65.5px;
+      background: $yellow;
+      transition: all .2s ease-in-out;
+
+      @include mq('tablet', 'min') {
+        position: relative;
+        right: auto;
+        background: none;
+        top: initial;
+      }
+
+      &.is-active {
+        right: 0;
+      }
+
+      li {
+        @include mq('tablet', 'min') {
+          display: inline-block;
+        }
+
+        a {
+          color: $dark;
+          text-decoration: none;
+          padding: 20px 0;
+          display: block;
+          font-size: 16px;
+          font-weight: 600;
+
+          @include mq('tablet', 'min') {
+            font-size: 14px;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 10px;
+          }
+
+          @include mq('desktop', 'min') {
+            &:hover {
+              background: $yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cta {
+    list-style: none;
+    display: none;
+
+    @include mq('desktop', 'min') {
+      display: block;
+    }
+
+    li {
+      display: inline-block;
+
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: $dark;
+        padding: 10px;
+        font-weight: 600;
+        margin-right: 10px;
+        border-radius: 5px;
+
+        &:hover {
+          background: $yellow;
+        }
+
+        &.bold {
+          background: $yellow;
+          padding: 10px 20px;
+          border-radius: 5px;
+          margin-right: 0;
+
+          &:hover {
+            background: darken($yellow, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  .hamburger {
+
+    @include mq('tablet', 'min') {
+      display: none;
+    }
+  }
+}

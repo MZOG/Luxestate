@@ -1,0 +1,115 @@
+.hero {
+    min-height: 630px;
+    position: relative;
+    margin-top: 50px !important;
+
+    &::after {
+        content: '';
+        background: $blue;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        height: 100%;
+        right: -50px;
+        width: 85%;
+    }
+
+    h1 {
+        padding-top: 140px;
+        font-size: 62px;
+
+        span {
+            display: block;
+        }
+    }
+
+    &-search {
+        margin-top: 50px;
+
+        input {
+            min-height: 60px;
+            width: 300px;
+            border: 0;
+            font-size: 16px;
+            text-indent: 20px;
+            background: #fafafa;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            background: $yellow;
+            min-height: 60px;
+            border: 0;
+            padding: 0 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background: darken($yellow, 5%);
+            }
+        }
+    }
+
+    &-contact {
+        position: absolute;
+        bottom: 0;
+        right: -50px;
+        display: flex;
+
+        .item {
+            background: $yellow;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 60px;
+            font-weight: 600;
+
+            &:hover {
+                background: $dark;
+
+                p {
+                    color: #fff;
+                }
+
+                svg {
+                    stroke: #fff;
+                }
+            }
+
+            &-icon {
+                svg {
+                    display: block;
+                    width: 30px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    &-scroll {
+        position: absolute;
+        left: -40px;
+        bottom: 44px;
+
+        p {
+            transform: rotate(-90deg);
+            opacity: 0.3;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            span {
+                font-size: 30px;
+            }
+        }
+    }
+}
