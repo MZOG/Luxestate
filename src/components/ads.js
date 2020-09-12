@@ -18,7 +18,7 @@ const Ads = () => {
                     </div>
                 </div>
                 <div className="ad-content">
-                    <h2>Super Awesome Add</h2>
+                    <h2>Super Add</h2>
                     <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on an octopus, yet due diligence</p>
                 </div>
             </div>
