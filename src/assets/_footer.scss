@@ -1,19 +1,36 @@
 footer {
     background: $dark;
-    padding: 50px 0;
+    padding: 20px 0;
     color: $grey;
+
+    @include mq('tablet', 'min') {
+        padding: 50px 0;
+    }
 
     .newsletter {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
         padding-bottom: 40px;
         border-bottom: 2px solid rgba(lighten($dark, 60%), 0.4);
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+
+        @include mq('tablet', 'min') {
+            flex-direction: row;
+            padding-bottom: 50px;
+        }
 
         h2 {
-            width: calc(50% - 20px);
-            font-size: 40px;
+            width: 100%;
+            font-size: 20px;
+
+            @include mq('phablet', 'min') {
+                font-size: 25px;
+            }
+
+            @include mq('desktop', 'min') {
+                font-size: 40px;
+            }
 
             span {
                 display: block;
@@ -21,31 +38,33 @@ footer {
         }
 
         .form {
-            width: calc(50% - 20px);
+            width: 100%;
             text-align: right;
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            margin-top: 20px;
+            // justify-content: flex-end;
 
 
             input {
-                min-height: 60px;
+                min-height: 40px;
                 border: none;
                 background: $grey;
-                width: 60%;
+                width: 100%;
                 margin: 0;
                 display: inline-block;
                 text-indent: 20px;
-                font-size: 16px;
+                font-size: 14px;
+                border-radius: 0;
             }
 
             button {
-                background: $grey;
+                border-radius: 0;
                 display: inline-block;
                 margin: 0;
                 border: none;
-                min-height: 60px;
-                padding: 0 30px;
+                min-height: 40px;
+                padding: 0 15px;
                 cursor: pointer;
                 background: $yellow;
 
@@ -59,19 +78,36 @@ footer {
     .links {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
+
+        @include mq('phablet', 'min') {
+            flex-direction: row;
+        }
 
         &-box {
             &:first-child {
-                width: calc(30% - 20px);
+                width: 100%;
+
+                @include mq('desktop', 'min') {
+                    width: calc(30% - 15px);
+                }
             }
 
-            width: calc(17.5% - 20px);
+            width: calc(50% - 15px);
+
+            @include mq('desktop', 'min') {
+                width: calc(17.5% - 15px);
+            }
 
             .siteTitle {
                 font-size: 25px;
                 font-weight: 600;
-                margin-bottom: 50px;
+                margin-bottom: 20px;
+
+                @include mq('phablet', 'min') {
+                    margin-bottom: 30px;
+                }
             }
 
             .copy {
@@ -85,7 +121,13 @@ footer {
             .title {
                 font-size: 13px;
                 color: rgba(lighten($dark, 60%), 0.4);
-                margin-bottom: 30px;
+                margin-bottom: 10px;
+                margin-top: 30px;
+
+                @include mq('desktop', 'min') {
+                    margin-bottom: 30px;
+                    margin-top: 0;
+                }
             }
 
             ul {

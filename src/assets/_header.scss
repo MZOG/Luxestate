@@ -34,9 +34,10 @@ header {
       right: -100%;
       width: 100%;
       padding: 0 20px;
-      top: 65.5px;
+      top: 65px;
       background: $yellow;
       transition: all .2s ease-in-out;
+      z-index: 10;
 
       @include mq('tablet', 'min') {
         position: relative;

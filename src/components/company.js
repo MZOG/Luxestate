@@ -2,7 +2,8 @@ import React from "react"
 import Container from "./container"
 
 const Company = () => (
-    <Container additionalClass="our-company">
+    <div className="our-company">
+    <Container>
         <div className="our-company_left">
             <h2>
                 Our’s Company <span>Statistics</span>
@@ -49,6 +50,7 @@ const Company = () => (
             </div>
         </div>
     </Container>
+    </div>
 )
 
 export default Company;

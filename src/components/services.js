@@ -3,7 +3,8 @@ import Container from "./container"
 
 const Services = () => {
     return(
-        <Container additionalClass="services">
+        <div className="services">
+        <Container>
             <h2>Services</h2>
             <p className="lead">
                 In this space market-facing, yet UI work flows , or bake it in. Red flag we need a first agile at the end of the day.
@@ -31,6 +32,7 @@ const Services = () => {
                 </div>
             </div>
         </Container>
+        </div>
     )
 }
 

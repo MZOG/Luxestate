@@ -1,10 +1,14 @@
 .ads {
     margin-top: 70px !important;
-    display: flex;
-    flex-direction: column;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 
     .ad {
         display: flex;
+        flex-wrap: wrap;
         margin-bottom: 50px;
 
         &.reverse {
@@ -12,21 +16,36 @@
 
             .ad-image {
                 .location {
-                    right: -30px !important;
-                    left: auto !important;
-                    transform: none;
+
+                    @include mq('phablet', 'min') {
+                        right: -30px !important;
+                        left: auto !important;
+                        transform: none;
+                    }
                 }
             }
 
             .ad-content {
-                text-align: right;
-                padding: 50px 100px 50px 30px;
+                @include mq('phablet', 'min') {
+                    text-align: right;
+                    width: calc(50% - 15px);
+                    padding: 0px 15px 25px 50px;
+                    margin-top: 0;
+                }
+
+                @include mq('desktop', 'min') {
+                    padding: 50px 100px 50px 0px;
+                }
             }
         }
 
         &-image {
-            width: calc(50% - 15px);
+            width: 100%;
             position: relative;
+
+            @include mq('phablet', 'min') {
+                width: calc(50% - 15px);
+            }
 
             img {
                 width: 100%;
@@ -39,10 +58,10 @@
                 background: $yellow;
                 left: 50%;
                 transform: translateX(-50%);
-                padding: 20px 50px;
-                width: 55%;
+                padding: 20px 10px;
+                width: 60%;
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
 
                 svg {
@@ -59,12 +78,26 @@
         }
 
         &-content {
-            width: calc(50% - 15px);
-            padding: 50px 30px 50px 100px;
+            width: 100%;
+            margin-top: 40px;
+
+            @include mq('phablet', 'min') {
+                width: calc(50% - 15px);
+                padding: 0px 15px 25px 50px;
+                margin-top: 0;
+            }
+
+            @include mq('desktop', 'min') {
+                padding: 50px 30px 50px 100px;
+            }
 
             h2 {
-                font-size: 25px;
-                margin-bottom: 40px;
+                font-size: 20px;
+                margin-bottom: 20px;
+
+                @include mq('phablet', 'min') {
+                    font-size: 25px;
+                }
             }
 
             p {

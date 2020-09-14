@@ -1,29 +1,65 @@
 .how-it-works {
-    margin-top: 80px !important;
-    padding-bottom: 50px;
+    padding-top: 30px;
+
+    @include mq('tablet', 'min') {
+        padding-top: 50px;
+    }
+
+    @include mq('desktop', 'min') {
+        padding-top: 50px;
+    }
 
     h2 {
-        font-size: 40px;
-        color: $dark;
-        margin-bottom: 30px;
+        font-size: 28px;
+
+            @include mq('tablet', 'min') {
+                font-size: 33px;
+            }
+
+            @include mq('desktop', 'min') {
+                font-size: 40px;
+            }
+
+        span {
+            display: block;
+        }
     }
 
     .lead {
-        width: 42%;
-        line-height: 1.5;
+        margin-top: 20px;
+
+        @include mq('desktop', 'min') {
+            width: 42%;
+            line-height: 1.5;
+        }
     }
 
     .numbers {
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-top: 40px;
+
+        @include mq('tablet', 'min') {
+            display: flex;
+            justify-content: space-between;
+        }
+        @include mq('desktop', 'min') {
+            margin-top: 50px;
+        }
 
         &-item {
-            width: calc(33.3% - 15px);
+            width: 100%;
             overflow: hidden;
             padding: 150px 50px 50px 50px;
             position: relative;
+            margin-bottom: 40px;
+            background: $grey;
+
+            @include mq('tablet', 'min') {
+                width: calc(33% - 15px);
+            }
+
+            @include mq('desktop', 'min') {
+                background: transparent;
+            }
 
             h3 {
                 margin-left: -20px;

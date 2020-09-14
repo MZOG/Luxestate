@@ -1,30 +1,60 @@
 .agents {
-    margin-top: 80px;
+    padding-top: 30px;
     background: $grey;
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
+
+
+    @include mq('tablet', 'min') {
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+
+    @include mq('desktop', 'min') {
+        margin-top: 70px;
+        padding-top: 50px;
+    }
 
     h2 {
-        font-size: 40px;
-        color: $dark;
-        margin-bottom: 30px;
+        font-size: 28px;
+
+            @include mq('tablet', 'min') {
+                font-size: 33px;
+            }
+
+            @include mq('desktop', 'min') {
+                font-size: 40px;
+            }
+
+        span {
+            display: block;
+        }
     }
 
     .lead {
-        width: 42%;
-        line-height: 1.5;
+        margin-top: 20px;
+        @include mq('tablet', 'min') {
+            width: 42%;
+            line-height: 1.5;
+        }
     }
 
     &-container {
-        margin-top: 50px;
-        display: flex;
-        justify-content: space-between;
+        margin-top: 30px;
+
+        @include mq('phablet', 'min') {
+            display: flex;
+            justify-content: space-between;
+        }
 
         .agent {
-            width: calc(33.3% - 15px);
+            width: 100%;
             background: #fff;
             box-shadow: 0 2.8px 2.2px rgba(0,0,0,.01),0 6.7px 5.3px rgba(0,0,0,.02),0 12.5px 10px rgba(0,0,0,.03),0 22.3px 17.9px rgba(0,0,0,.02),0 41.8px 33.4px rgba(0,0,0,.01),0 100px 80px rgba(0,0,0,.06);
+            margin-bottom: 30px;
 
+            @include mq('phablet', 'min') {
+                width: calc(33.3% - 15px);
+            }
             img {
                 width: 100%;
                 display: block;

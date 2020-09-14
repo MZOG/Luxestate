@@ -3,7 +3,8 @@ import Container from "./container"
 
 const Hero = () => {
     return(
-        <Container additionalClass="hero">
+        <div className="hero">
+        <Container >
             <h1>Find Your New <span>Modern Appartment</span></h1>
 
             <div className="hero-search">
@@ -31,6 +32,7 @@ const Hero = () => {
                 <p><span>&#10229;</span> scroll down</p>
             </div>
         </Container>
+        </div>
     )
 }
 

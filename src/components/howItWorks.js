@@ -4,7 +4,8 @@ import {Link} from "gatsby"
 
 const HowItWorks = () => {
     return (
-       <Container additionalClass="how-it-works">
+        <div className="how-it-works">
+       <Container>
            <h2>How it works?</h2>
            <p className="lead">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day. </p>
 
@@ -34,6 +35,7 @@ const HowItWorks = () => {
                </div>
            </div>
        </Container>
+       </div>
     )
 }
 

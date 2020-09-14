@@ -4,8 +4,8 @@ import {Link} from "gatsby"
 
 const Ads = () => {
     return(
-        <Container additionalClass="ads">
-
+        <div className="ads">
+        <Container>
             <div className="ad">
                 <div className="ad-image">
                     <img src="https://dummyimage.com/550x330/8da4be/96bece&text=+" alt=""/>
@@ -53,6 +53,7 @@ const Ads = () => {
                 </div>
             </div>
         </Container>
+        </div>
     )
 }
 
